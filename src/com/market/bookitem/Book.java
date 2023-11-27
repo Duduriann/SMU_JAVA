@@ -11,7 +11,7 @@ public class Book extends Item {
 		super(bookId, name, unitPrice);
 	}
 	
-	public Book(String bookId, String name, int unitPrice, String author, String descripion, String category, String releaseDate) {
+	public Book(String bookId, String name, int unitPrice, String author, String description, String category, String releaseDate) {
 		super(bookId, name, unitPrice);
 		this.author = author;
 		this.description = description;
@@ -29,7 +29,7 @@ public class Book extends Item {
 
 	public int getUnitPrice(){return unitPrice;}
 	
-	public void setUnitPrice(String unitprice) { this.unitPrice = unitPrice; }
+	public void setUnitPrice(int unitPrice) { this.unitPrice = unitPrice; }
 
 	public String getAuthor(){return author;}
 	

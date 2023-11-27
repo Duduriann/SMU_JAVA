@@ -3,7 +3,7 @@ package com.market.cart;
 import com.market.bookitem.Book;
 
 public class CartItem {
-	private Book itembook;
+	private Book itemBook;
 	// private String[] itemBook = new String[7];
 	private String bookID;
 	private int quantity;
@@ -32,17 +32,17 @@ public class CartItem {
 	
 	public CartItem(Book booklist) {
 		this.itemBook = booklist;
-		this.bookID = booklist.getBook();
+		this.bookID = booklist.getBookId();
 		this.quantity = 1;
 		updateTotalPrice(); 
 	}
 	
 	public Book getItemBook() {
-		return itembook;
+		return itemBook;
 	}
 	
 	public void setItemBook(Book itemBook) {
-		this.itembook = itemBook;
+		this.itemBook = itemBook;
 	}
 	
 	public void setTotalPrice(int totalPrice) {

@@ -1,6 +1,6 @@
 package com.market.bookitem;
 
-public class Item {
+public abstract class Item {
 	String bookId;
 	String name;
 	int unitPrice;
@@ -18,8 +18,6 @@ public class Item {
 	abstract int getUnitPrice();
 	
 	abstract void setBookId(String bookId);
-	
-	abstract void setName(String name);
 	
 	abstract void setName(String name);
 	
